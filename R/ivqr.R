@@ -26,7 +26,7 @@ ivqr <- function(y, e, X, Z, tau = 0.5, method = "br", grilla = seq(-10,10,0.1))
 
   for(coeficiente in grilla){
     y_hat = y - coeficiente * e
-    fit <- quantreg::rq(y_hat ~ X + Z - 1, tau = tau, method = method)
+    fit <- quantreg::rq(y_hat ~ X + Z, tau = tau, method = method)
     
     if(is.null(fit_optimo) ||norm(as.matrix(coefficients(fit)[(ncol(X)+1):(ncol(X)+ncol(Z))])) < norm(as.matrix(coefficients(fit_optimo)[(ncol(X)+1):(ncol(X)+ncol(Z))]))){
       fit_optimo = fit
