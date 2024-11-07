@@ -1,0 +1,14 @@
+Package: IVQR
+Title: Instrumental Variable Quantile Regression
+Version: 0.1.0
+Authors@R: person("Lautaro Lasorsa", email = "lautarolasorsa@gmail.com", role = c("aut", "cre"))
+Description: Estimación de Modelos de Regresión Cuantil con Variables Instrumentales siguiendo el enfoque de Chernozhukov y Hansen.
+Depends: R (>= 3.5.0)
+Imports: quantreg, Matrix, stats
+License: GPL-3
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
