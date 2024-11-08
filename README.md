@@ -24,7 +24,7 @@ El paquete incluye la función
 ivrq(y, e, X, Z, tau = 0.5, method = "br", grilla = seq(-10,10,0.1))
 ```
 
-Esta función buscara estimar el modelo $ y = \beta * e + \gamma * X + u $, donde $ e = \pi * Z + v $, con $\pi$ el coeficiente de la variable instrumental $Z$. Para esto generará los modelos $y - \beta * e = \gamma * X + \pi * Z + u$ y utilizará el valor de $\beta$ que minimice $||\pi||$.
+Esta función buscara estimar el modelo $y = \beta * e + \gamma * X + u$, donde $e = \pi * Z + v$, con $\pi$ el coeficiente de la variable instrumental $Z$. Para esto generará los modelos $y - \beta * e = \gamma * X + \pi * Z + u$ y utilizará el valor de $\beta$ que minimice $||\pi||$.
 
 La grilla de valores es el espacio de busqueda de los valores de $\beta$. 
 
